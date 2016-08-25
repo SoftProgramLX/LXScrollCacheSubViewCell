@@ -20,7 +20,7 @@
     return self;
 }
 
-- (void)downlaodDataWithIndex:(NSInteger)index
+- (void)refreshDataWithIndex:(NSInteger)index
 {
     self.label.text = [NSString stringWithFormat:@"这是ThreeScrollViewCell\n第 %ld 页", (long)index];
 }

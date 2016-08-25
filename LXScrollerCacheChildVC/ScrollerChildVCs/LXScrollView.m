@@ -206,18 +206,20 @@
 {
     [self changeSelectButtonSatusWithIndex:index];
     
-    CGRect rect = [self.selectButton.superview convertRect:self.selectButton.frame toView:self];
-    [UIView animateWithDuration:0 animations:^{
-        self.indicatorView.x = titleWidth*index;
-        CGPoint contentOffset = self.titleScroll.contentOffset;
-        if (contentOffset.x - (SCREEN_WIDTH/2-rect.origin.x-titleWidth/2)<=0) {
-            [self.titleScroll setContentOffset:CGPointMake(0, contentOffset.y) animated:YES];
-        } else if (contentOffset.x - (SCREEN_WIDTH/2-rect.origin.x-titleWidth/2)+SCREEN_WIDTH>=_titleArray.count*titleWidth) {
-            [self.titleScroll setContentOffset:CGPointMake(_titleArray.count*titleWidth-SCREEN_WIDTH, contentOffset.y) animated:YES];
-        } else {
-            [self.titleScroll setContentOffset:CGPointMake(contentOffset.x - (SCREEN_WIDTH/2-rect.origin.x-titleWidth/2), contentOffset.y) animated:YES];
-        }
-    }];
+    if (self.titleCanScroll) {
+        CGRect rect = [self.selectButton.superview convertRect:self.selectButton.frame toView:self];
+        [UIView animateWithDuration:0 animations:^{
+            self.indicatorView.x = titleWidth*index;
+            CGPoint contentOffset = self.titleScroll.contentOffset;
+            if (contentOffset.x - (SCREEN_WIDTH/2-rect.origin.x-titleWidth/2)<=0) {
+                [self.titleScroll setContentOffset:CGPointMake(0, contentOffset.y) animated:YES];
+            } else if (contentOffset.x - (SCREEN_WIDTH/2-rect.origin.x-titleWidth/2)+SCREEN_WIDTH>=_titleArray.count*titleWidth) {
+                [self.titleScroll setContentOffset:CGPointMake(_titleArray.count*titleWidth-SCREEN_WIDTH, contentOffset.y) animated:YES];
+            } else {
+                [self.titleScroll setContentOffset:CGPointMake(contentOffset.x - (SCREEN_WIDTH/2-rect.origin.x-titleWidth/2), contentOffset.y) animated:YES];
+            }
+        }];
+    }
 }
 
 - (void)changeSelectButtonSatusWithIndex:(NSInteger)index

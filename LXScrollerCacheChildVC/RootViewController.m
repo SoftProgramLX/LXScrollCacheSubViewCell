@@ -79,7 +79,7 @@
 - (void)initSetup
 {
     self.view.backgroundColor = [UIColor grayColor];
-    self.title = @"ScrollerChildVCs";
+    self.title = @"LXScrollerCacheSubViewCell";
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.800 green:0.600 blue:0.800 alpha:0.5]];
     //下面句代码必不可少
     self.automaticallyAdjustsScrollViewInsets = NO;
