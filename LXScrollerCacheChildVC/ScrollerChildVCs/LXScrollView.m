@@ -265,12 +265,13 @@
 
 - (void)manageData
 {
+    //判断滑动方向，因为self.showChildVCArr的数据是根据X坐标升序排列的
     if (lastIndex < newIndex) {
         for (int i = 0; i < self.showChildVCArr.count; i++) {
             LXScrollViewCell *cell = self.showChildVCArr[i];
             
-            //判断cell是否还显示在屏幕上
             if (cell.x/SCREEN_WIDTH < newIndex-1) {
+                //判断了此cell已经没有显示在屏幕上
                 [self changeDataWithCell:cell];
                 i--;
             } else {
@@ -281,8 +282,8 @@
         for (int i = (int)self.showChildVCArr.count - 1; i >= 0 && self.showChildVCArr.count > 0; i--) {
             LXScrollViewCell *cell = self.showChildVCArr[i];
             
-            //判断cell是否还显示在屏幕上
             if (cell.x/SCREEN_WIDTH > newIndex+1) {
+                //判断了此cell已经没有显示在屏幕上
                 [self changeDataWithCell:cell];
             } else {
                 break;
