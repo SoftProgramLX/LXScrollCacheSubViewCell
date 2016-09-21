@@ -18,6 +18,7 @@
         self.backgroundColor = [UIColor redColor];
         self.reuseIdentifier = reuseIdentifier;
         
+        //可以将此label删除，在子控制器里创建自己的UI
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.frame.size.width, 50)];
         label.font = [UIFont systemFontOfSize:20];
         label.textColor = [UIColor whiteColor];
