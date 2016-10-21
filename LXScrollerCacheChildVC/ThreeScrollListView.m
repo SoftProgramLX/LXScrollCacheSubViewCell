@@ -1,20 +1,20 @@
 //
-//  TwoScrollViewCell.m
+//  ThreeScrollViewCell.m
 //  LXScrollerCacheChildVC
 //
 //  Created by 李旭 on 16/8/25.
 //  Copyright © 2016年 LX. All rights reserved.
 //
 
-#import "TwoScrollViewCell.h"
+#import "ThreeScrollListView.h"
 
-@implementation TwoScrollViewCell
+@implementation ThreeScrollListView
 
 - (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
 {
     self = [super initWithReuseIdentifier:reuseIdentifier];
     if (self) {
-        self.backgroundColor = [UIColor greenColor];
+        self.backgroundColor = [UIColor blueColor];
         
         //在这里创建自己所需UI；
     }
@@ -25,7 +25,7 @@
 - (void)refreshDataWithIndex:(NSInteger)index
 {
     //可以不用父类的label，在LXScrollViewCell里删除
-    self.label.text = [NSString stringWithFormat:@"这是TwoScrollViewCell\n第 %ld 页", (long)index];
+    self.label.text = [NSString stringWithFormat:@"这是ThreeScrollViewCell\n第 %ld 页", (long)index];
 }
 
 @end

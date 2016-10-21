@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LXScrollView.h"
 
-@interface LXScrollViewCell : UIView
+@interface LXScrollListView : UIView
 
 @property (nonatomic, copy, nonnull)   NSString *reuseIdentifier;
 @property (nonatomic, weak, nullable)   UILabel *label;

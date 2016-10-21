@@ -8,7 +8,7 @@
 
 #import "LXScrollView.h"
 #import "ScrollChildHeader.h"
-#import "LXScrollViewCell.h"
+#import "LXScrollListView.h"
 
 @interface LXScrollView ()<UIScrollViewDelegate>
 {
@@ -61,7 +61,7 @@
     //先取显示中的cell
     if (lastIndex > newIndex) {//如果向右滑动
         for (int i = 0; i < self.showChildVCArr.count; i++) {
-            LXScrollViewCell *cell = self.showChildVCArr[i];
+            LXScrollListView *cell = self.showChildVCArr[i];
             if (cell.x/SCREEN_WIDTH == newIndex) {//if成立说明这个cell还是显示在界面上的
                 showing = YES;
                 return cell;
@@ -71,7 +71,7 @@
         }
     } else {
         for (int i = (int)self.showChildVCArr.count - 1; i >= 0; i--) {
-            LXScrollViewCell *cell = self.showChildVCArr[i];
+            LXScrollListView *cell = self.showChildVCArr[i];
             if (cell.x/SCREEN_WIDTH == newIndex) {
                 showing = YES;
                 return cell;
@@ -197,7 +197,7 @@
     if ([self.delegate respondsToSelector:@selector(scrollView:cellForIndex:)]) {
         [self manageData];
         
-        LXScrollViewCell *cell = [self.delegate scrollView:self cellForIndex:index];
+        LXScrollListView *cell = [self.delegate scrollView:self cellForIndex:index];
         [self refreshCellFrame:cell withIndex:index];
     }
 }
@@ -241,7 +241,7 @@
     }];
 }
 
-- (void)refreshCellFrame:(LXScrollViewCell *)cell withIndex:(NSInteger)index
+- (void)refreshCellFrame:(LXScrollListView *)cell withIndex:(NSInteger)index
 {
     cell.x = index * SCREEN_WIDTH;
     cell.height = self.contentView.height;
@@ -268,7 +268,7 @@
     //判断滑动方向，因为self.showChildVCArr的数据是根据X坐标升序排列的
     if (lastIndex < newIndex) {
         for (int i = 0; i < self.showChildVCArr.count; i++) {
-            LXScrollViewCell *cell = self.showChildVCArr[i];
+            LXScrollListView *cell = self.showChildVCArr[i];
             
             if (cell.x/SCREEN_WIDTH < newIndex-1) {
                 //判断了此cell已经没有显示在屏幕上
@@ -280,7 +280,7 @@
         }
     } else {
         for (int i = (int)self.showChildVCArr.count - 1; i >= 0 && self.showChildVCArr.count > 0; i--) {
-            LXScrollViewCell *cell = self.showChildVCArr[i];
+            LXScrollListView *cell = self.showChildVCArr[i];
             
             if (cell.x/SCREEN_WIDTH > newIndex+1) {
                 //判断了此cell已经没有显示在屏幕上
@@ -292,7 +292,7 @@
     }
 }
 
-- (void)changeDataWithCell:(LXScrollViewCell *)cell
+- (void)changeDataWithCell:(LXScrollListView *)cell
 {
     [self.showChildVCArr removeObject:cell];
     if ([self.cacheChildVCDic objectForKey:cell.reuseIdentifier] == nil) {

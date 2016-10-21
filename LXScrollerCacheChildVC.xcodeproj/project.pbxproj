@@ -16,10 +16,10 @@
 		5C95117D1D6E8D4D009A6809 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511711D6E8D4D009A6809 /* RootViewController.m */; };
 		5C95117F1D6E8D4D009A6809 /* LXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511771D6E8D4D009A6809 /* LXScrollView.m */; };
 		5C9511801D6E8D4D009A6809 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511791D6E8D4D009A6809 /* UIView+Extension.m */; };
-		5C9511841D6E94FD009A6809 /* LXScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511831D6E94FD009A6809 /* LXScrollViewCell.m */; };
-		5C9511871D6E9548009A6809 /* OneScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511861D6E9548009A6809 /* OneScrollViewCell.m */; };
-		5C95118A1D6E9553009A6809 /* TwoScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511891D6E9553009A6809 /* TwoScrollViewCell.m */; };
-		5C95118D1D6EDA9D009A6809 /* ThreeScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C95118C1D6EDA9D009A6809 /* ThreeScrollViewCell.m */; };
+		5C9511841D6E94FD009A6809 /* LXScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511831D6E94FD009A6809 /* LXScrollListView.m */; };
+		5C9511871D6E9548009A6809 /* OneScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511861D6E9548009A6809 /* OneScrollListView.m */; };
+		5C95118A1D6E9553009A6809 /* TwoScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511891D6E9553009A6809 /* TwoScrollListView.m */; };
+		5C95118D1D6EDA9D009A6809 /* ThreeScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C95118C1D6EDA9D009A6809 /* ThreeScrollListView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,14 +60,14 @@
 		5C9511771D6E8D4D009A6809 /* LXScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXScrollView.m; sourceTree = "<group>"; };
 		5C9511781D6E8D4D009A6809 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		5C9511791D6E8D4D009A6809 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		5C9511821D6E94FD009A6809 /* LXScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXScrollViewCell.h; sourceTree = "<group>"; };
-		5C9511831D6E94FD009A6809 /* LXScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXScrollViewCell.m; sourceTree = "<group>"; };
-		5C9511851D6E9548009A6809 /* OneScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneScrollViewCell.h; sourceTree = "<group>"; };
-		5C9511861D6E9548009A6809 /* OneScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneScrollViewCell.m; sourceTree = "<group>"; };
-		5C9511881D6E9553009A6809 /* TwoScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoScrollViewCell.h; sourceTree = "<group>"; };
-		5C9511891D6E9553009A6809 /* TwoScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoScrollViewCell.m; sourceTree = "<group>"; };
-		5C95118B1D6EDA9D009A6809 /* ThreeScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeScrollViewCell.h; sourceTree = "<group>"; };
-		5C95118C1D6EDA9D009A6809 /* ThreeScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeScrollViewCell.m; sourceTree = "<group>"; };
+		5C9511821D6E94FD009A6809 /* LXScrollListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXScrollListView.h; sourceTree = "<group>"; };
+		5C9511831D6E94FD009A6809 /* LXScrollListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXScrollListView.m; sourceTree = "<group>"; };
+		5C9511851D6E9548009A6809 /* OneScrollListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneScrollListView.h; sourceTree = "<group>"; };
+		5C9511861D6E9548009A6809 /* OneScrollListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneScrollListView.m; sourceTree = "<group>"; };
+		5C9511881D6E9553009A6809 /* TwoScrollListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoScrollListView.h; sourceTree = "<group>"; };
+		5C9511891D6E9553009A6809 /* TwoScrollListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoScrollListView.m; sourceTree = "<group>"; };
+		5C95118B1D6EDA9D009A6809 /* ThreeScrollListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeScrollListView.h; sourceTree = "<group>"; };
+		5C95118C1D6EDA9D009A6809 /* ThreeScrollListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeScrollListView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +121,12 @@
 				5C9511721D6E8D4D009A6809 /* ScrollerChildVCs */,
 				5C9511701D6E8D4D009A6809 /* RootViewController.h */,
 				5C9511711D6E8D4D009A6809 /* RootViewController.m */,
-				5C9511851D6E9548009A6809 /* OneScrollViewCell.h */,
-				5C9511861D6E9548009A6809 /* OneScrollViewCell.m */,
-				5C9511881D6E9553009A6809 /* TwoScrollViewCell.h */,
-				5C9511891D6E9553009A6809 /* TwoScrollViewCell.m */,
-				5C95118B1D6EDA9D009A6809 /* ThreeScrollViewCell.h */,
-				5C95118C1D6EDA9D009A6809 /* ThreeScrollViewCell.m */,
+				5C9511851D6E9548009A6809 /* OneScrollListView.h */,
+				5C9511861D6E9548009A6809 /* OneScrollListView.m */,
+				5C9511881D6E9553009A6809 /* TwoScrollListView.h */,
+				5C9511891D6E9553009A6809 /* TwoScrollListView.m */,
+				5C95118B1D6EDA9D009A6809 /* ThreeScrollListView.h */,
+				5C95118C1D6EDA9D009A6809 /* ThreeScrollListView.m */,
 				5C95113E1D6E8D24009A6809 /* AppDelegate.h */,
 				5C95113F1D6E8D24009A6809 /* AppDelegate.m */,
 				5C95113B1D6E8D24009A6809 /* Supporting Files */,
@@ -168,8 +168,8 @@
 			children = (
 				5C9511761D6E8D4D009A6809 /* LXScrollView.h */,
 				5C9511771D6E8D4D009A6809 /* LXScrollView.m */,
-				5C9511821D6E94FD009A6809 /* LXScrollViewCell.h */,
-				5C9511831D6E94FD009A6809 /* LXScrollViewCell.m */,
+				5C9511821D6E94FD009A6809 /* LXScrollListView.h */,
+				5C9511831D6E94FD009A6809 /* LXScrollListView.m */,
 				5C9511781D6E8D4D009A6809 /* UIView+Extension.h */,
 				5C9511791D6E8D4D009A6809 /* UIView+Extension.m */,
 				5C9511751D6E8D4D009A6809 /* ScrollChildHeader.h */,
@@ -308,12 +308,12 @@
 			files = (
 				5C9511401D6E8D24009A6809 /* AppDelegate.m in Sources */,
 				5C95117D1D6E8D4D009A6809 /* RootViewController.m in Sources */,
-				5C95118A1D6E9553009A6809 /* TwoScrollViewCell.m in Sources */,
+				5C95118A1D6E9553009A6809 /* TwoScrollListView.m in Sources */,
 				5C9511801D6E8D4D009A6809 /* UIView+Extension.m in Sources */,
-				5C95118D1D6EDA9D009A6809 /* ThreeScrollViewCell.m in Sources */,
+				5C95118D1D6EDA9D009A6809 /* ThreeScrollListView.m in Sources */,
 				5C95117F1D6E8D4D009A6809 /* LXScrollView.m in Sources */,
-				5C9511841D6E94FD009A6809 /* LXScrollViewCell.m in Sources */,
-				5C9511871D6E9548009A6809 /* OneScrollViewCell.m in Sources */,
+				5C9511841D6E94FD009A6809 /* LXScrollListView.m in Sources */,
+				5C9511871D6E9548009A6809 /* OneScrollListView.m in Sources */,
 				5C95113D1D6E8D24009A6809 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +532,7 @@
 				5C9511671D6E8D24009A6809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C9511681D6E8D24009A6809 /* Build configuration list for PBXNativeTarget "LXScrollerCacheChildVCTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +541,7 @@
 				5C95116A1D6E8D24009A6809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C95116B1D6E8D24009A6809 /* Build configuration list for PBXNativeTarget "LXScrollerCacheChildVCUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +550,7 @@
 				5C95116D1D6E8D24009A6809 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

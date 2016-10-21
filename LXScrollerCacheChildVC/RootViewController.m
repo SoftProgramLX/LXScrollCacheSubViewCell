@@ -7,12 +7,12 @@
 //
 
 #import "RootViewController.h"
-#import "LXScrollViewCell.h"
-#import "TwoScrollViewCell.h"
-#import "OneScrollViewCell.h"
+#import "LXScrollListView.h"
 #import "LXScrollView.h"
 #import "ScrollChildHeader.h"
-#import "ThreeScrollViewCell.h"
+#import "TwoScrollListView.h"
+#import "OneScrollListView.h"
+#import "ThreeScrollListView.h"
 
 @interface RootViewController () <LXScrollViewDelegate>
 
@@ -41,20 +41,20 @@
     self.scrollerView = scrollerView;
 }
 
-- (LXScrollViewCell *)scrollView:(LXScrollView *)scrollView cellForIndex:(NSInteger)index
+- (LXScrollListView *)scrollView:(LXScrollView *)scrollView cellForIndex:(NSInteger)index
 {
     if (index%4 == 0 ) {
-        OneScrollViewCell *cell = [OneScrollViewCell cellWithScrollView:scrollView];
+        OneScrollListView *cell = [OneScrollListView cellWithScrollView:scrollView];
         [cell refreshDataWithIndex:index];
         return cell;
         
     } else if (index%4 == 1) {
-        TwoScrollViewCell *cell = [TwoScrollViewCell cellWithScrollView:scrollView];
+        TwoScrollListView *cell = [TwoScrollListView cellWithScrollView:scrollView];
         [cell refreshDataWithIndex:index];
         return cell;
     } else {
         
-        ThreeScrollViewCell *cell = [ThreeScrollViewCell cellWithScrollView:scrollView];
+        ThreeScrollListView *cell = [ThreeScrollListView cellWithScrollView:scrollView];
         [cell refreshDataWithIndex:index];
         return cell;
     }

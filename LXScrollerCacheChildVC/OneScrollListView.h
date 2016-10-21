@@ -6,9 +6,9 @@
 //  Copyright © 2016年 LX. All rights reserved.
 //
 
-#import "LXScrollViewCell.h"
+#import "LXScrollListView.h"
 
-@interface OneScrollViewCell : LXScrollViewCell
+@interface OneScrollListView : LXScrollListView
 
 
 @end
