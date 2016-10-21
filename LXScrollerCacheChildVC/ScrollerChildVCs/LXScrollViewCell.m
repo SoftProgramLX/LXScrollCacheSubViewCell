@@ -11,6 +11,16 @@
 
 @implementation LXScrollViewCell
 
++ (instancetype)cellWithScrollView:(LXScrollView *)ScrollView
+{
+    NSString *ID = NSStringFromClass(self);
+    LXScrollViewCell *cell = [ScrollView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[self alloc] initWithReuseIdentifier:ID];
+    }
+    return cell;
+}
+
 - (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
 {
     self = [super initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64)];

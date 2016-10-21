@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LXScrollView.h"
 
 @interface LXScrollViewCell : UIView
 
@@ -15,5 +16,6 @@
 
 - (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier;
 - (void)refreshDataWithIndex:(NSInteger)index;
++ (instancetype)cellWithScrollView:(LXScrollView *)ScrollView;
 
 @end

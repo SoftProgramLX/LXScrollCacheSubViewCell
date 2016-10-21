@@ -44,30 +44,19 @@
 - (LXScrollViewCell *)scrollView:(LXScrollView *)scrollView cellForIndex:(NSInteger)index
 {
     if (index%4 == 0 ) {
-        static NSString *cellId = @"OneScrollViewCell";
-        OneScrollViewCell *viewCell = [scrollView dequeueReusableCellWithIdentifier:cellId];
-        if (!viewCell) {
-            viewCell = [[OneScrollViewCell alloc] initWithReuseIdentifier:cellId];
-        }
-        [viewCell refreshDataWithIndex:index];
-        return viewCell;
+        OneScrollViewCell *cell = [OneScrollViewCell cellWithScrollView:scrollView];
+        [cell refreshDataWithIndex:index];
+        return cell;
         
     } else if (index%4 == 1) {
-        static NSString *cellId = @"TwoScrollViewCell";
-        TwoScrollViewCell *viewCell = [scrollView dequeueReusableCellWithIdentifier:cellId];
-        if (!viewCell) {
-            viewCell = [[TwoScrollViewCell alloc] initWithReuseIdentifier:cellId];
-        }
-        [viewCell refreshDataWithIndex:index];
-        return viewCell;
+        TwoScrollViewCell *cell = [TwoScrollViewCell cellWithScrollView:scrollView];
+        [cell refreshDataWithIndex:index];
+        return cell;
     } else {
-        static NSString *cellId = @"ThreeScrollViewCell";
-        ThreeScrollViewCell *viewCell = [scrollView dequeueReusableCellWithIdentifier:cellId];
-        if (!viewCell) {
-            viewCell = [[ThreeScrollViewCell alloc] initWithReuseIdentifier:cellId];
-        }
-        [viewCell refreshDataWithIndex:index];
-        return viewCell;
+        
+        ThreeScrollViewCell *cell = [ThreeScrollViewCell cellWithScrollView:scrollView];
+        [cell refreshDataWithIndex:index];
+        return cell;
     }
 }
 
