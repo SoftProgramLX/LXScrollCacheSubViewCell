@@ -56,7 +56,7 @@
     [self setupContentView];
 }
 
-- (nullable __kindof LXScrollViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier
+- (nullable __kindof LXScrollListView *)dequeueReusableCellWithIdentifier:(NSString *)identifier
 {
     //先取显示中的cell
     if (lastIndex > newIndex) {//如果向右滑动
