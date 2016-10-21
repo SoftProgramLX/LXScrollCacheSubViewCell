@@ -11,11 +11,11 @@
 
 @interface LXScrollViewCell : UIView
 
-@property (nonatomic, copy)   NSString *reuseIdentifier;
-@property (nonatomic, weak)   UILabel *label;
+@property (nonatomic, copy, nonnull)   NSString *reuseIdentifier;
+@property (nonatomic, weak, nullable)   UILabel *label;
 
-- (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier;
+- (nullable __kindof instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier;
 - (void)refreshDataWithIndex:(NSInteger)index;
-+ (instancetype)cellWithScrollView:(LXScrollView *)ScrollView;
++ (nullable __kindof instancetype)cellWithScrollView:(nullable __kindof LXScrollView *)ScrollView;
 
 @end

@@ -26,6 +26,6 @@
 @property (nonatomic, strong) NSArray *titleArray;
 @property (nonatomic, weak)   id<LXScrollViewDelegate> delegate;
 
-- (nullable __kindof LXScrollViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
+- (LXScrollViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
 
 @end
