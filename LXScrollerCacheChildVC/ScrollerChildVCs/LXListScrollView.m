@@ -6,15 +6,15 @@
 //  Copyright © 2016年 LX. All rights reserved.
 //
 
-#import "LXScrollListView.h"
+#import "LXListScrollView.h"
 #import "ScrollChildHeader.h"
 
-@implementation LXScrollListView
+@implementation LXListScrollView
 
 + (instancetype)cellWithScrollView:(LXScrollView *)ScrollView
 {
     NSString *ID = NSStringFromClass(self);
-    LXScrollListView *cell = [ScrollView dequeueReusableCellWithIdentifier:ID];
+    LXListScrollView *cell = [ScrollView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
         cell = [[self alloc] initWithReuseIdentifier:ID];
     }

@@ -1,14 +1,14 @@
 //
-//  OneScrollViewCell.h
+//  ThreeScrollViewCell.h
 //  LXScrollerCacheChildVC
 //
 //  Created by 李旭 on 16/8/25.
 //  Copyright © 2016年 LX. All rights reserved.
 //
 
-#import "LXScrollListView.h"
+#import "LXListScrollView.h"
 
-@interface OneScrollListView : LXScrollListView
+@interface ThreeListScrollView : LXListScrollView
 
 
 @end

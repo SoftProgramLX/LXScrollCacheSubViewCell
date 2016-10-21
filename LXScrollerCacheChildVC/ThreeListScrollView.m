@@ -6,9 +6,9 @@
 //  Copyright © 2016年 LX. All rights reserved.
 //
 
-#import "ThreeScrollListView.h"
+#import "ThreeListScrollView.h"
 
-@implementation ThreeScrollListView
+@implementation ThreeListScrollView
 
 - (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
 {

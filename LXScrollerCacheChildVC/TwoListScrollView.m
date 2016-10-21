@@ -6,9 +6,9 @@
 //  Copyright © 2016年 LX. All rights reserved.
 //
 
-#import "TwoScrollListView.h"
+#import "TwoListScrollView.h"
 
-@implementation TwoScrollListView
+@implementation TwoListScrollView
 
 - (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
 {

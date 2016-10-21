@@ -6,13 +6,13 @@
 //  Copyright © 2016年 LX. All rights reserved.
 //
 
-#import "OneScrollListView.h"
+#import "OneListScrollView.h"
 
-@interface OneScrollListView ()
+@interface OneListScrollView ()
 
 @end
 
-@implementation OneScrollListView
+@implementation OneListScrollView
 
 - (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
 {

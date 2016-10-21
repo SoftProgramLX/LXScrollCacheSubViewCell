@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-@class LXScrollListView;
+@class LXListScrollView;
 @class LXScrollView;
 
 @protocol LXScrollViewDelegate <NSObject>
 
 @required
-- (LXScrollListView *)scrollView:(LXScrollView *)scrollView cellForIndex:(NSInteger)index;
+- (LXListScrollView *)scrollView:(LXScrollView *)scrollView cellForIndex:(NSInteger)index;
 
 @optional
 - (void)scrollView:(LXScrollView *)tableView didSelectIndex:(NSInteger)index;
@@ -26,6 +26,6 @@
 @property (nonatomic, strong) NSArray *titleArray;
 @property (nonatomic, weak)   id<LXScrollViewDelegate> delegate;
 
-- (LXScrollListView *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
+- (LXListScrollView *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
 
 @end

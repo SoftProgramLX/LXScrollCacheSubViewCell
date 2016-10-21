@@ -16,10 +16,10 @@
 		5C95117D1D6E8D4D009A6809 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511711D6E8D4D009A6809 /* RootViewController.m */; };
 		5C95117F1D6E8D4D009A6809 /* LXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511771D6E8D4D009A6809 /* LXScrollView.m */; };
 		5C9511801D6E8D4D009A6809 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511791D6E8D4D009A6809 /* UIView+Extension.m */; };
-		5C9511841D6E94FD009A6809 /* LXScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511831D6E94FD009A6809 /* LXScrollListView.m */; };
-		5C9511871D6E9548009A6809 /* OneScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511861D6E9548009A6809 /* OneScrollListView.m */; };
-		5C95118A1D6E9553009A6809 /* TwoScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511891D6E9553009A6809 /* TwoScrollListView.m */; };
-		5C95118D1D6EDA9D009A6809 /* ThreeScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C95118C1D6EDA9D009A6809 /* ThreeScrollListView.m */; };
+		5C9511841D6E94FD009A6809 /* LXListScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511831D6E94FD009A6809 /* LXListScrollView.m */; };
+		5C9511871D6E9548009A6809 /* OneListScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511861D6E9548009A6809 /* OneListScrollView.m */; };
+		5C95118A1D6E9553009A6809 /* TwoListScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9511891D6E9553009A6809 /* TwoListScrollView.m */; };
+		5C95118D1D6EDA9D009A6809 /* ThreeListScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C95118C1D6EDA9D009A6809 /* ThreeListScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,14 +60,14 @@
 		5C9511771D6E8D4D009A6809 /* LXScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXScrollView.m; sourceTree = "<group>"; };
 		5C9511781D6E8D4D009A6809 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		5C9511791D6E8D4D009A6809 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		5C9511821D6E94FD009A6809 /* LXScrollListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXScrollListView.h; sourceTree = "<group>"; };
-		5C9511831D6E94FD009A6809 /* LXScrollListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXScrollListView.m; sourceTree = "<group>"; };
-		5C9511851D6E9548009A6809 /* OneScrollListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneScrollListView.h; sourceTree = "<group>"; };
-		5C9511861D6E9548009A6809 /* OneScrollListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneScrollListView.m; sourceTree = "<group>"; };
-		5C9511881D6E9553009A6809 /* TwoScrollListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoScrollListView.h; sourceTree = "<group>"; };
-		5C9511891D6E9553009A6809 /* TwoScrollListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoScrollListView.m; sourceTree = "<group>"; };
-		5C95118B1D6EDA9D009A6809 /* ThreeScrollListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeScrollListView.h; sourceTree = "<group>"; };
-		5C95118C1D6EDA9D009A6809 /* ThreeScrollListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeScrollListView.m; sourceTree = "<group>"; };
+		5C9511821D6E94FD009A6809 /* LXListScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXListScrollView.h; sourceTree = "<group>"; };
+		5C9511831D6E94FD009A6809 /* LXListScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXListScrollView.m; sourceTree = "<group>"; };
+		5C9511851D6E9548009A6809 /* OneListScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneListScrollView.h; sourceTree = "<group>"; };
+		5C9511861D6E9548009A6809 /* OneListScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneListScrollView.m; sourceTree = "<group>"; };
+		5C9511881D6E9553009A6809 /* TwoListScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoListScrollView.h; sourceTree = "<group>"; };
+		5C9511891D6E9553009A6809 /* TwoListScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoListScrollView.m; sourceTree = "<group>"; };
+		5C95118B1D6EDA9D009A6809 /* ThreeListScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeListScrollView.h; sourceTree = "<group>"; };
+		5C95118C1D6EDA9D009A6809 /* ThreeListScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeListScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +121,12 @@
 				5C9511721D6E8D4D009A6809 /* ScrollerChildVCs */,
 				5C9511701D6E8D4D009A6809 /* RootViewController.h */,
 				5C9511711D6E8D4D009A6809 /* RootViewController.m */,
-				5C9511851D6E9548009A6809 /* OneScrollListView.h */,
-				5C9511861D6E9548009A6809 /* OneScrollListView.m */,
-				5C9511881D6E9553009A6809 /* TwoScrollListView.h */,
-				5C9511891D6E9553009A6809 /* TwoScrollListView.m */,
-				5C95118B1D6EDA9D009A6809 /* ThreeScrollListView.h */,
-				5C95118C1D6EDA9D009A6809 /* ThreeScrollListView.m */,
+				5C9511851D6E9548009A6809 /* OneListScrollView.h */,
+				5C9511861D6E9548009A6809 /* OneListScrollView.m */,
+				5C9511881D6E9553009A6809 /* TwoListScrollView.h */,
+				5C9511891D6E9553009A6809 /* TwoListScrollView.m */,
+				5C95118B1D6EDA9D009A6809 /* ThreeListScrollView.h */,
+				5C95118C1D6EDA9D009A6809 /* ThreeListScrollView.m */,
 				5C95113E1D6E8D24009A6809 /* AppDelegate.h */,
 				5C95113F1D6E8D24009A6809 /* AppDelegate.m */,
 				5C95113B1D6E8D24009A6809 /* Supporting Files */,
@@ -168,8 +168,8 @@
 			children = (
 				5C9511761D6E8D4D009A6809 /* LXScrollView.h */,
 				5C9511771D6E8D4D009A6809 /* LXScrollView.m */,
-				5C9511821D6E94FD009A6809 /* LXScrollListView.h */,
-				5C9511831D6E94FD009A6809 /* LXScrollListView.m */,
+				5C9511821D6E94FD009A6809 /* LXListScrollView.h */,
+				5C9511831D6E94FD009A6809 /* LXListScrollView.m */,
 				5C9511781D6E8D4D009A6809 /* UIView+Extension.h */,
 				5C9511791D6E8D4D009A6809 /* UIView+Extension.m */,
 				5C9511751D6E8D4D009A6809 /* ScrollChildHeader.h */,
@@ -308,12 +308,12 @@
 			files = (
 				5C9511401D6E8D24009A6809 /* AppDelegate.m in Sources */,
 				5C95117D1D6E8D4D009A6809 /* RootViewController.m in Sources */,
-				5C95118A1D6E9553009A6809 /* TwoScrollListView.m in Sources */,
+				5C95118A1D6E9553009A6809 /* TwoListScrollView.m in Sources */,
 				5C9511801D6E8D4D009A6809 /* UIView+Extension.m in Sources */,
-				5C95118D1D6EDA9D009A6809 /* ThreeScrollListView.m in Sources */,
+				5C95118D1D6EDA9D009A6809 /* ThreeListScrollView.m in Sources */,
 				5C95117F1D6E8D4D009A6809 /* LXScrollView.m in Sources */,
-				5C9511841D6E94FD009A6809 /* LXScrollListView.m in Sources */,
-				5C9511871D6E9548009A6809 /* OneScrollListView.m in Sources */,
+				5C9511841D6E94FD009A6809 /* LXListScrollView.m in Sources */,
+				5C9511871D6E9548009A6809 /* OneListScrollView.m in Sources */,
 				5C95113D1D6E8D24009A6809 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
